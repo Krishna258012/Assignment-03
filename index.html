@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <style>
+      body {
+        background-color: rgb(2, 203, 203);
+      }
+      .type {
+        font-weight: bold;
+        font-style: italic;
+      }
+      select {
+        width: 140px;
+      }
+      .mine{
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="padding-left: 10px">
+      <h2>Registration Form</h2>
+
+      <form action="action.html" method="get" target="_blank">
+        <div>Enter your details below</div>
+
+        <ul>
+          <li>
+            <div class="mine">
+            <input type="email" placeholder="your_email@gmail.com">
+          </div>
+          </li>
+          <br>
+
+          <li>
+            <div class="mine"><input type="password" id="pass" placeholder="Password">
+            </div>
+            </li>
+        </ul>
+
+        <label for="pass"><span class="type">!Type a complex password with 8-20 characters.</span></label>
+
+        <ul>
+          <li>
+            <div class="mine">
+            <input type="tel" placeholder="+20 Phone Number" required>
+          </div>
+          </li>
+        </ul>
+        <hr>
+
+        <p class="type">Enter your Profession:</p>
+
+        <ul>
+          <li>
+            <div class="mine">
+            <input type="radio" name="Profession" id="Student">
+            <label for="Student">Student</label>
+
+            <input type="radio" name="Profession" id="Teacher">
+            <label for="Teacher">Teacher</label>
+
+            <input type="radio" name="Profession" id="Developer">
+            <label for="Developer">Developer</label>
+          </div>
+          </li>
+        </ul>
+
+        <label for="stu">Choose the stage if you are (student)</label>
+        <select name="stage" id="stu">
+          <option value="First primary">First primary</option>
+          <option value="middle">Middle</option>
+          <option value="Secondary">Secondary</option>
+          <option value="Higher">Higher Secondary</option>
+        </select><hr>
+
+        <ul>
+          <li>
+            <div class="mine">
+            <label for="birth">Enter Your Birth date.</label>
+            <input type="date" name="birthdate" id="birth">
+          </div>
+          </li>
+        </ul><hr>
+
+        <ul>
+          <li>
+            <div class="mine">
+              <input type="text" placeholder="Any notes">
+            </div>
+          </li>
+        </ul><hr>
+
+
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+
+      </form>
+    </div>
+  </body>
+</html>
